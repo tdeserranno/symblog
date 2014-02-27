@@ -130,7 +130,10 @@ class __TwigTemplate_d53f462c111a516e9538d856a8035b744110c5cfce6b44e38c9b613412b
         // line 26
         echo $this->env->getExtension('routing')->getPath("BloggerBlogBundle_about");
         echo "\">About</a></li>
-                                <li><a href=\"#\">Contact</a></li>
+                                <li><a href=\"";
+        // line 27
+        echo $this->env->getExtension('routing')->getPath("BloggerBlogBundle_contact");
+        echo "\">Contact</a></li>
                             </ul>
                         </nav>
                     ";
@@ -139,13 +142,17 @@ class __TwigTemplate_d53f462c111a516e9538d856a8035b744110c5cfce6b44e38c9b613412b
     // line 34
     public function block_blog_title($context, array $blocks = array())
     {
-        echo "<a href=\"#\">symblog</a>";
+        echo "<a href=\"";
+        echo $this->env->getExtension('routing')->getPath("BloggerBlogBundle_homepage");
+        echo "\">symblog</a>";
     }
 
     // line 35
     public function block_blog_tagline($context, array $blocks = array())
     {
-        echo "<a href=\"#\">creating a blog in Symfony2</a>";
+        echo "<a href=\"";
+        echo $this->env->getExtension('routing')->getPath("BloggerBlogBundle_homepage");
+        echo "\">creating a blog in Symfony2</a>";
     }
 
     // line 40
@@ -183,6 +190,6 @@ class __TwigTemplate_d53f462c111a516e9538d856a8035b744110c5cfce6b44e38c9b613412b
 
     public function getDebugInfo()
     {
-        return array (  170 => 53,  165 => 48,  162 => 47,  157 => 43,  152 => 40,  146 => 35,  140 => 34,  131 => 26,  127 => 25,  123 => 23,  120 => 22,  114 => 13,  110 => 11,  107 => 10,  101 => 6,  96 => 54,  94 => 53,  89 => 50,  87 => 47,  82 => 44,  80 => 43,  76 => 41,  74 => 40,  66 => 35,  62 => 34,  57 => 31,  55 => 22,  44 => 15,  42 => 10,  35 => 6,  28 => 1,);
+        return array (  177 => 53,  172 => 48,  169 => 47,  164 => 43,  159 => 40,  151 => 35,  143 => 34,  135 => 27,  131 => 26,  127 => 25,  123 => 23,  120 => 22,  114 => 13,  110 => 11,  107 => 10,  101 => 6,  96 => 54,  94 => 53,  89 => 50,  87 => 47,  82 => 44,  80 => 43,  76 => 41,  74 => 40,  66 => 35,  62 => 34,  57 => 31,  55 => 22,  44 => 15,  42 => 10,  35 => 6,  28 => 1,);
     }
 }
