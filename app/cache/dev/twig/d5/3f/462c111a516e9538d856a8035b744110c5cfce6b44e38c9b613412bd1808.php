@@ -122,8 +122,14 @@ class __TwigTemplate_d53f462c111a516e9538d856a8035b744110c5cfce6b44e38c9b613412b
         // line 23
         echo "                        <nav>
                             <ul class=\"navigation\">
-                                <li><a href=\"#\">Home</a></li>
-                                <li><a href=\"#\">About</a></li>
+                                <li><a href=\"";
+        // line 25
+        echo $this->env->getExtension('routing')->getPath("BloggerBlogBundle_homepage");
+        echo "\">Home</a></li>
+                                <li><a href=\"";
+        // line 26
+        echo $this->env->getExtension('routing')->getPath("BloggerBlogBundle_about");
+        echo "\">About</a></li>
                                 <li><a href=\"#\">Contact</a></li>
                             </ul>
                         </nav>
@@ -177,6 +183,6 @@ class __TwigTemplate_d53f462c111a516e9538d856a8035b744110c5cfce6b44e38c9b613412b
 
     public function getDebugInfo()
     {
-        return array (  164 => 53,  159 => 48,  156 => 47,  151 => 43,  146 => 40,  140 => 35,  134 => 34,  123 => 23,  120 => 22,  114 => 13,  110 => 11,  107 => 10,  101 => 6,  96 => 54,  94 => 53,  89 => 50,  87 => 47,  82 => 44,  80 => 43,  76 => 41,  74 => 40,  66 => 35,  62 => 34,  57 => 31,  55 => 22,  44 => 15,  42 => 10,  35 => 6,  31 => 5,  28 => 1,);
+        return array (  170 => 53,  165 => 48,  162 => 47,  157 => 43,  152 => 40,  146 => 35,  140 => 34,  131 => 26,  127 => 25,  123 => 23,  120 => 22,  114 => 13,  110 => 11,  107 => 10,  101 => 6,  96 => 54,  94 => 53,  89 => 50,  87 => 47,  82 => 44,  80 => 43,  76 => 41,  74 => 40,  66 => 35,  62 => 34,  57 => 31,  55 => 22,  44 => 15,  42 => 10,  35 => 6,  28 => 1,);
     }
 }
