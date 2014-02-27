@@ -6,3 +6,5 @@ b91323,::1,GET,http://localhost/symblog/web/app_dev.php/_configurator/step/1,139
 cc3b09,::1,POST,http://localhost/symblog/web/app_dev.php/_configurator/step/1,1393502603,
 61ee0d,::1,GET,http://localhost/symblog/web/app_dev.php/_configurator/final,1393502605,
 f0efad,::1,GET,http://localhost/symblog/web/app_dev.php/,1393502616,
+1e0174,::1,GET,http://localhost/symblog/web/app_dev.php/,1393504524,
+c57f4c,::1,GET,http://localhost/symblog/web/app_dev.php/about,1393504829,
