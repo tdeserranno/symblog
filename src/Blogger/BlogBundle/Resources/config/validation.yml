@@ -1,0 +1,22 @@
+Blogger\BlogBundle\Entity\Enquiry:
+    properties:
+        name:
+            - NotBlank: ~
+        email:
+            - Email:
+                message: email address not valid
+        subject:
+            - NotBlank: ~
+            - Length:
+                max: 50
+        body:
+            - Length:
+                min: 50
+Blogger\BlogBundle\Entity\Comment:
+    properties:
+        user: 
+            - NotBlank: { message: "You must enter your name."}
+            
+        comment:
+            - NotBlank: { message: "You must enter a comment."}
+        

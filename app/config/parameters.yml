@@ -1,3 +1,4 @@
+# This file is auto-generated during the composer install
 parameters:
     database_driver: pdo_mysql
     database_host: 127.0.0.1
@@ -5,10 +6,9 @@ parameters:
     database_name: symblog
     database_user: Thomas
     database_password: e6627
-    mailer_transport: smtp
-    mailer_host: 127.0.0.1
-    mailer_user: null
-    mailer_password: null
+    mailer_transport: gmail
+    mailer_host: smtp.gmail.com
+    mailer_user: thomas.deserranno
+    mailer_password: accessgmail
     locale: en
     secret: 71ee9f691d6575b853992afe617f16d19db43041
-    database_path: null

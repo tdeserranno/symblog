@@ -1,6 +1,8 @@
 imports:
     - { resource: parameters.yml }
     - { resource: security.yml }
+    #blogger contact email
+    - { resource: @BloggerBlogBundle/Resources/config/config.yml}
 
 framework:
     #esi:             ~
@@ -11,7 +13,8 @@ framework:
         strict_requirements: ~
     form:            ~
     csrf_protection: ~
-    validation:      { enable_annotations: true }
+#    validation:      { enable_annotations: true }
+    validation:      { enabled: true }
     templating:
         engines: ['twig']
         #assets_version: SomeVersionScheme
