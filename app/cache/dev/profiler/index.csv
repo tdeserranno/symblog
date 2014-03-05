@@ -75,3 +75,15 @@ a85492,::1,GET,http://localhost/symblog/web/app_dev.php/21,1394009457,
 7717ca,127.0.0.1,GET,http://localhost/symblog/web/app_dev.php/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DBloggerBlogBundle%253AComment%253Anew,1394009483,126fd7
 f8afe2,127.0.0.1,GET,http://localhost/symblog/web/app_dev.php/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DBloggerBlogBundle%253APage%253Asidebar,1394009483,126fd7
 126fd7,::1,GET,http://localhost/symblog/web/app_dev.php/21,1394009483,
+03f91b,127.0.0.1,GET,http://localhost/symblog/web/app_dev.php/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DBloggerBlogBundle%253AComment%253Anew,1394014143,71f604
+0f6e07,::1,GET,http://localhost/symblog/web/app_dev.php/21,1394014144,71f604
+71f604,::1,GET,http://localhost/symblog/web/app_dev.php/21,1394014144,
+5ea2a8,127.0.0.1,GET,http://localhost/symblog/web/app_dev.php/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DBloggerBlogBundle%253AComment%253Anew,1394014162,04a835
+4bd630,::1,GET,http://localhost/symblog/web/app_dev.php/21,1394014162,04a835
+04a835,::1,GET,http://localhost/symblog/web/app_dev.php/21,1394014162,
+2f200c,127.0.0.1,GET,http://localhost/symblog/web/app_dev.php/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DBloggerBlogBundle%253AComment%253Anew,1394014214,0cbb69
+392960,127.0.0.1,GET,http://localhost/symblog/web/app_dev.php/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DBloggerBlogBundle%253APage%253Asidebar,1394014214,0cbb69
+0cbb69,::1,GET,http://localhost/symblog/web/app_dev.php/21,1394014214,
+39e581,127.0.0.1,GET,http://localhost/symblog/web/app_dev.php/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DBloggerBlogBundle%253AComment%253Anew,1394014321,fd67ee
+6cb1de,127.0.0.1,GET,http://localhost/symblog/web/app_dev.php/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DBloggerBlogBundle%253APage%253Asidebar,1394014321,fd67ee
+fd67ee,::1,GET,http://localhost/symblog/web/app_dev.php/21,1394014321,
