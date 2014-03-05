@@ -26,6 +26,9 @@ Blogger\BlogBundle\Entity\Blog:
             type: datetime
         updated:
             type: datetime
+        slug:
+            type: string
+            length: 255
     oneToMany:
         comments:
             targetEntity: Comment
