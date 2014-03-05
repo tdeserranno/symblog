@@ -18,3 +18,12 @@ b9961a,::1,GET,http://localhost/symblog/web/app_dev.php/23,1393934981,
 cd4cad,::1,POST,http://localhost/symblog/web/app_dev.php/comment/23,1393935389,
 cfca42,127.0.0.1,GET,http://localhost/symblog/web/app_dev.php/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DBloggerBlogBundle%253AComment%253Anew,1393935390,5d6fa4
 5d6fa4,::1,GET,http://localhost/symblog/web/app_dev.php/23,1393935390,
+d2f387,::1,GET,http://localhost/symblog/web/app_dev.php/,1393941910,
+3f1b16,::1,GET,http://localhost/symblog/web/app_dev.php/,1393943227,
+d5a9f1,::1,GET,http://localhost/symblog/web/app_dev.php/,1393943266,
+c559f4,::1,GET,http://localhost/symblog/web/app_dev.php/,1394003398,
+4ab260,127.0.0.1,GET,http://localhost/symblog/web/app_dev.php/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DBloggerBlogBundle%253AComment%253Anew,1394003406,d7968e
+d7968e,::1,GET,http://localhost/symblog/web/app_dev.php/23,1394003406,
+e48e32,127.0.0.1,GET,http://localhost/symblog/web/app_dev.php/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DBloggerBlogBundle%253AComment%253Anew,1394003426,772970
+772970,::1,GET,http://localhost/symblog/web/app_dev.php/21,1394003426,
+b70762,::1,GET,http://localhost/symblog/web/app_dev.php/,1394003733,

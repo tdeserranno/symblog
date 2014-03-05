@@ -16,6 +16,7 @@ class BlogRepository extends EntityRepository
     {
         $qb = $this->createQueryBuilder('b')
                    ->select('b')
+                   ->leftJoin('b.comments', 'c')//more effective than standard lazy loading
                    ->addOrderBy('b.created', 'DESC');
 
         if (false === is_null($limit))
