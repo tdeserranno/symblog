@@ -29,20 +29,20 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         if (0 === strpos($pathinfo, '/css')) {
             if (0 === strpos($pathinfo, '/css/blogger')) {
-                // _assetic_e95c551
+                // _assetic_b41c622
                 if ($pathinfo === '/css/blogger.css') {
-                    return array (  '_controller' => 'assetic.controller:render',  'name' => 'e95c551',  'pos' => NULL,  '_format' => 'css',  '_route' => '_assetic_e95c551',);
+                    return array (  '_controller' => 'assetic.controller:render',  'name' => 'b41c622',  'pos' => NULL,  '_format' => 'css',  '_route' => '_assetic_b41c622',);
                 }
 
                 if (0 === strpos($pathinfo, '/css/blogger_part_1_')) {
-                    // _assetic_e95c551_0
+                    // _assetic_b41c622_0
                     if ($pathinfo === '/css/blogger_part_1_blog_1.css') {
-                        return array (  '_controller' => 'assetic.controller:render',  'name' => 'e95c551',  'pos' => 0,  '_format' => 'css',  '_route' => '_assetic_e95c551_0',);
+                        return array (  '_controller' => 'assetic.controller:render',  'name' => 'b41c622',  'pos' => 0,  '_format' => 'css',  '_route' => '_assetic_b41c622_0',);
                     }
 
-                    // _assetic_e95c551_1
+                    // _assetic_b41c622_1
                     if ($pathinfo === '/css/blogger_part_1_sidebar_2.css') {
-                        return array (  '_controller' => 'assetic.controller:render',  'name' => 'e95c551',  'pos' => 1,  '_format' => 'css',  '_route' => '_assetic_e95c551_1',);
+                        return array (  '_controller' => 'assetic.controller:render',  'name' => 'b41c622',  'pos' => 1,  '_format' => 'css',  '_route' => '_assetic_b41c622_1',);
                     }
 
                 }

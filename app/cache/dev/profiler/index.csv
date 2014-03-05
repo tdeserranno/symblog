@@ -144,3 +144,5 @@ da5e05,::1,GET,http://localhost/symblog/web/app_dev.php/,1394023982,
 e36cea,::1,GET,http://localhost/symblog/web/app_dev.php/,1394024205,
 9ea4d0,127.0.0.1,GET,http://localhost/symblog/web/app_dev.php/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DBloggerBlogBundle%253APage%253Asidebar,1394024267,03c9ac
 03c9ac,::1,GET,http://localhost/symblog/web/app_dev.php/,1394024267,
+c77cc6,127.0.0.1,GET,http://localhost/symblog/web/app_dev.php/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DBloggerBlogBundle%253APage%253Asidebar,1394029501,7a3be8
+7a3be8,::1,GET,http://localhost/symblog/web/app_dev.php/,1394029501,

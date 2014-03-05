@@ -35,22 +35,22 @@ class __TwigTemplate_631986844d0049abea69d77a3e4f8437a23f28a90f11d0f8d77279edc4e
     ";
         // line 6
         if (isset($context['assetic']['debug']) && $context['assetic']['debug']) {
-            // asset "e95c551_0"
-            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_e95c551_0") : $this->env->getExtension('assets')->getAssetUrl("_controller/css/blogger_part_1_blog_1.css");
+            // asset "b41c622_0"
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_b41c622_0") : $this->env->getExtension('assets')->getAssetUrl("_controller/css/blogger_part_1_blog_1.css");
             // line 11
             echo "        <link href=\"";
             echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
             echo "\" rel=\"stylesheet\" media=\"screen\" />
     ";
-            // asset "e95c551_1"
-            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_e95c551_1") : $this->env->getExtension('assets')->getAssetUrl("_controller/css/blogger_part_1_sidebar_2.css");
+            // asset "b41c622_1"
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_b41c622_1") : $this->env->getExtension('assets')->getAssetUrl("_controller/css/blogger_part_1_sidebar_2.css");
             echo "        <link href=\"";
             echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
             echo "\" rel=\"stylesheet\" media=\"screen\" />
     ";
         } else {
-            // asset "e95c551"
-            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_e95c551") : $this->env->getExtension('assets')->getAssetUrl("_controller/css/blogger.css");
+            // asset "b41c622"
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_b41c622") : $this->env->getExtension('assets')->getAssetUrl("_controller/css/blogger.css");
             echo "        <link href=\"";
             echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
             echo "\" rel=\"stylesheet\" media=\"screen\" />
