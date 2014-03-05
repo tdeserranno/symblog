@@ -32,21 +32,37 @@ class __TwigTemplate_631986844d0049abea69d77a3e4f8437a23f28a90f11d0f8d77279edc4e
         echo "    ";
         $this->displayParentBlock("stylesheets", $context, $blocks);
         echo "
-    <link href=\"";
+    ";
         // line 6
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/bloggerblog/css/blog.css"), "html", null, true);
-        echo "\" rel=\"stylesheet\">
-    <link href=\"";
-        // line 7
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/bloggerblog/css/sidebar.css"), "html", null, true);
-        echo "\" rel=\"stylesheet\">
-";
+        if (isset($context['assetic']['debug']) && $context['assetic']['debug']) {
+            // asset "e95c551_0"
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_e95c551_0") : $this->env->getExtension('assets')->getAssetUrl("_controller/css/blogger_part_1_blog_1.css");
+            // line 11
+            echo "        <link href=\"";
+            echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
+            echo "\" rel=\"stylesheet\" media=\"screen\" />
+    ";
+            // asset "e95c551_1"
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_e95c551_1") : $this->env->getExtension('assets')->getAssetUrl("_controller/css/blogger_part_1_sidebar_2.css");
+            echo "        <link href=\"";
+            echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
+            echo "\" rel=\"stylesheet\" media=\"screen\" />
+    ";
+        } else {
+            // asset "e95c551"
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_e95c551") : $this->env->getExtension('assets')->getAssetUrl("_controller/css/blogger.css");
+            echo "        <link href=\"";
+            echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
+            echo "\" rel=\"stylesheet\" media=\"screen\" />
+    ";
+        }
+        unset($context["asset_url"]);
     }
 
-    // line 10
+    // line 15
     public function block_sidebar($context, array $blocks = array())
     {
-        // line 11
+        // line 16
         echo "    ";
         echo $this->env->getExtension('actions')->renderUri($this->env->getExtension('http_kernel')->controller("BloggerBlogBundle:Page:sidebar"), array());
     }
@@ -63,6 +79,6 @@ class __TwigTemplate_631986844d0049abea69d77a3e4f8437a23f28a90f11d0f8d77279edc4e
 
     public function getDebugInfo()
     {
-        return array (  50 => 11,  47 => 10,  41 => 7,  37 => 6,  32 => 5,  74 => 22,  71 => 21,  69 => 20,  60 => 14,  53 => 12,  48 => 10,  42 => 9,  38 => 7,  35 => 6,  29 => 4,);
+        return array (  66 => 16,  63 => 15,  41 => 11,  37 => 6,  32 => 5,  29 => 4,);
     }
 }
