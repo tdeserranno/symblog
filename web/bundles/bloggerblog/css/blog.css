@@ -88,5 +88,12 @@ form.blogger ul li {
 .comments .odd { background: #eee; }
 .comments .comment { padding: 20px; }
 .comments .comment p { margin-bottom: 0; }
-.comments h3 { background: #eee; padding: 10px; font-size: 20px; margin-bottom: 20px; clear: both; }
+.comments h3 { 
+    background: #eee;
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    clear: both;
+}
 .comments .previous-comments { margin-bottom: 20px; }

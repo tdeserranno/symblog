@@ -39,6 +39,7 @@
     <parameter key="locale">en</parameter>
     <parameter key="secret">71ee9f691d6575b853992afe617f16d19db43041</parameter>
     <parameter key="blogger_blog.emails.contact_email">thomas.deserranno@gmail.com</parameter>
+    <parameter key="blogger_blog.comments.latest_comment_limit">5</parameter>
     <parameter key="controller_resolver.class">Symfony\Bundle\FrameworkBundle\Controller\ControllerResolver</parameter>
     <parameter key="controller_name_converter.class">Symfony\Bundle\FrameworkBundle\Controller\ControllerNameParser</parameter>
     <parameter key="response_listener.class">Symfony\Component\HttpKernel\EventListener\ResponseListener</parameter>

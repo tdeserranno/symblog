@@ -3459,6 +3459,7 @@ class appDevDebugProjectContainer extends Container
             'locale' => 'en',
             'secret' => '71ee9f691d6575b853992afe617f16d19db43041',
             'blogger_blog.emails.contact_email' => 'thomas.deserranno@gmail.com',
+            'blogger_blog.comments.latest_comment_limit' => 5,
             'controller_resolver.class' => 'Symfony\\Bundle\\FrameworkBundle\\Controller\\ControllerResolver',
             'controller_name_converter.class' => 'Symfony\\Bundle\\FrameworkBundle\\Controller\\ControllerNameParser',
             'response_listener.class' => 'Symfony\\Component\\HttpKernel\\EventListener\\ResponseListener',

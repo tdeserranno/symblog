@@ -27,4 +27,19 @@ class CommentRepository extends EntityRepository
         return $qb->getQuery()
                   ->getResult();
     }
+    
+    public function getLatestComments($limit = 10)
+    {
+        //select comments order by id desc so that they are ordered from newest to oldest
+        $qb = $this->createQueryBuilder('c')
+                ->select('c')
+                ->addOrderBy('c.id', 'DESC');
+        //if a limit parameter was given set it as maxresults of the query
+        if (false === is_null($limit)) {
+            $qb->setMaxResults($limit);
+        }
+        
+        return $qb->getQuery()
+                ->getResult();
+    }
 }

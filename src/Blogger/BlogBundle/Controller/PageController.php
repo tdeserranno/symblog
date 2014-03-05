@@ -73,13 +73,22 @@ class PageController extends Controller
     public function sidebarAction()
     {
         $em = $this->getDoctrine()->getManager();
+        //get tagweights
         $tags = $em->getRepository('BloggerBlogBundle:Blog')->getTags();//necessary 
         $tagWeights = $em->getRepository('BloggerBlogBundle:Blog')->getTagWeights($tags);
         
+        //get commentlimit from config
+        $commentLimit = $this->container->getParameter('blogger_blog.comments.latest_comment_limit');
+        //get latest comments
+        $latestComments = $em->getRepository('BloggerBlogBundle:Comment')
+                ->getLatestComments($commentLimit);
+        
+        //render template
         return $this->render(
                 'BloggerBlogBundle:Page:sidebar.html.twig',
                 array(
                     'tags' => $tagWeights,
+                    'latestComments' => $latestComments,
                 ));
     }
 }
