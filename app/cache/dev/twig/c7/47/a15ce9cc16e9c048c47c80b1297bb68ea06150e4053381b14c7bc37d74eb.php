@@ -66,10 +66,12 @@ class __TwigTemplate_c747a15ce9cc16e9c048c47c80b1297bb68ea06150e4053381b14c7bc37
             </div>
 
             <footer class=\"meta\">
-                <p>Comments: ";
+                <p>Comments: <a href=\"";
             // line 19
+            echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("BloggerBlogBundle_blog_show", array("id" => $this->getAttribute((isset($context["blog"]) ? $context["blog"] : $this->getContext($context, "blog")), "id"))), "html", null, true);
+            echo "\">";
             echo twig_escape_filter($this->env, twig_length_filter($this->env, $this->getAttribute((isset($context["blog"]) ? $context["blog"] : $this->getContext($context, "blog")), "comments")), "html", null, true);
-            echo "</p>
+            echo "</a></p>
                 <p>Posted by <span class=\"highlight\">";
             // line 20
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["blog"]) ? $context["blog"] : $this->getContext($context, "blog")), "author"), "html", null, true);
@@ -107,6 +109,6 @@ class __TwigTemplate_c747a15ce9cc16e9c048c47c80b1297bb68ea06150e4053381b14c7bc37
 
     public function getDebugInfo()
     {
-        return array (  90 => 25,  81 => 21,  75 => 20,  71 => 19,  64 => 15,  60 => 14,  55 => 12,  47 => 9,  40 => 7,  37 => 6,  31 => 5,  28 => 4,);
+        return array (  92 => 25,  83 => 21,  77 => 20,  71 => 19,  64 => 15,  60 => 14,  55 => 12,  47 => 9,  40 => 7,  37 => 6,  31 => 5,  28 => 4,);
     }
 }

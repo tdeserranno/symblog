@@ -36,15 +36,19 @@ class __TwigTemplate_631986844d0049abea69d77a3e4f8437a23f28a90f11d0f8d77279edc4e
         // line 6
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/bloggerblog/css/blog.css"), "html", null, true);
         echo "\" rel=\"stylesheet\">
+    <link href=\"";
+        // line 7
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/bloggerblog/css/sidebar.css"), "html", null, true);
+        echo "\" rel=\"stylesheet\">
 ";
     }
 
-    // line 9
+    // line 10
     public function block_sidebar($context, array $blocks = array())
     {
-        // line 10
-        echo "    Sidebar content
-";
+        // line 11
+        echo "    ";
+        echo $this->env->getExtension('actions')->renderUri($this->env->getExtension('http_kernel')->controller("BloggerBlogBundle:Page:sidebar"), array());
     }
 
     public function getTemplateName()
@@ -59,6 +63,6 @@ class __TwigTemplate_631986844d0049abea69d77a3e4f8437a23f28a90f11d0f8d77279edc4e
 
     public function getDebugInfo()
     {
-        return array (  46 => 10,  43 => 9,  32 => 5,  29 => 4,  87 => 25,  78 => 21,  72 => 20,  64 => 15,  60 => 14,  55 => 12,  47 => 9,  40 => 7,  37 => 6,  31 => 5,  28 => 4,);
+        return array (  50 => 11,  47 => 10,  41 => 7,  37 => 6,  32 => 5,  29 => 4,);
     }
 }

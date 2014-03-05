@@ -25,4 +25,56 @@ class BlogRepository extends EntityRepository
         return $qb->getQuery()
                   ->getResult();
     }
+    
+    public function getTags()
+    {
+        //get all tags from all blogs
+        $blogTags = $this->createQueryBuilder('b')
+                ->select('b.tags')
+                ->getQuery()
+                ->getResult();
+        //merge tags of each blog in common tags array
+        $tags = array();
+        foreach ($blogTags as $blogTag) {
+            $tags = array_merge(explode(',', $blogTag['tags']), $tags);
+        }
+        //trim each tag in tags array
+        foreach ($tags as $tag) {
+            $tag = trim($tag);
+        }
+        
+        return $tags;
+    }
+    
+    public function getTagWeights($tags)
+    {
+        $tagWeights = array();
+        //if no tags, return empty tagweights array
+        if (empty($tags)) {
+            return $tagWeights;
+        }
+        /*cycle through tags array, for each tag increment its weight by 1 in
+         * tagweights array or set tagweight to 1 if tag not yet in tagweights array */
+        foreach ($tags as $tag) {
+            $tagWeights[$tag] = (isset($tagWeights[$tag])) ? $tagWeights[$tag] + 1 : 1;
+        }
+        //shuffle tags
+        uksort(
+                $tagWeights,
+                function()
+                {
+                    return rand() > rand();
+                });
+        //find highest value in tagweights
+        $max = max($tagWeights);
+        //max of 5 weights
+        $multiplier = ($max > 5) ? 5 / $max : 1;
+        /*for each tag determine the weight by using the multiplier and then
+         * rounding off upwards to the nearest integer value(still type float)*/
+        foreach ($tagWeights as $tagWeight) {
+            $tagWeight = ceil($tagWeight * $multiplier);
+        }
+        
+        return $tagWeights;
+    }
 }
