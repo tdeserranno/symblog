@@ -532,7 +532,7 @@
     <parameter key="web_profiler.controller.exception.class">Symfony\Bundle\WebProfilerBundle\Controller\ExceptionController</parameter>
     <parameter key="web_profiler.debug_toolbar.position">bottom</parameter>
     <parameter key="web_profiler.debug_toolbar.class">Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener</parameter>
-    <parameter key="web_profiler.debug_toolbar.intercept_redirects">false</parameter>
+    <parameter key="web_profiler.debug_toolbar.intercept_redirects">true</parameter>
     <parameter key="web_profiler.debug_toolbar.mode">2</parameter>
     <parameter key="sensio_distribution.webconfigurator.class">Sensio\Bundle\DistributionBundle\Configurator\Configurator</parameter>
     <parameter key="data_collector.templates" type="collection">
@@ -2570,7 +2570,7 @@
     <service id="web_profiler.debug_toolbar" class="Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener">
       <tag name="kernel.event_subscriber"/>
       <argument type="service" id="twig"/>
-      <argument>false</argument>
+      <argument>true</argument>
       <argument>2</argument>
       <argument>bottom</argument>
       <argument type="service" id="router" on-invalid="ignore"/>

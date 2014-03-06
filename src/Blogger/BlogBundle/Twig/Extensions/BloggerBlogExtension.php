@@ -28,15 +28,15 @@ class BloggerBlogExtension extends \Twig_Extension
         //seconds
         if ($delta < 60) {
             $time = $delta;
-            $duration = $time . ' second'.(($time > 1) ? 's' : '').' ago';
+            $duration = $time . ' second'.(($time === 0 || $time > 1) ? 's' : '').' ago';
         }
         //minutes
-        elseif ($delta <= 3600) {
+        elseif ($delta < 3600) {
             $time = floor($delta / 60);
             $duration = $time . ' minute'.(($time > 1) ? 's' : '').' ago';
         }
         //hours
-        elseif ($delta <= 86400) {
+        elseif ($delta < 86400) {
             $time = floor($delta / 3600);
             $duration = $time . ' hour'.(($time > 1) ? 's' : '').' ago';
         }

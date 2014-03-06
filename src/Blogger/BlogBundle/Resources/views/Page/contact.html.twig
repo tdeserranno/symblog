@@ -9,7 +9,7 @@
     </header>
 
     {%for flashMessage in app.session.flashbag.get('blogger-notice')%}
-        <div>
+        <div class="blogger-notice">
             {{flashMessage}}
         </div>
     {%endfor%}

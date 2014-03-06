@@ -1,5 +1,5 @@
-/nbproject/
-/vendor/
-/app/cache/
-/app/logs/
-/app/phpunit.xml
+nbproject/
+vendor/
+app/cache/
+app/logs/
+app/phpunit.xml
